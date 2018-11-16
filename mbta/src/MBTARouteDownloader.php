@@ -252,7 +252,6 @@ class MBTARouteDownloader {
       return NULL;
     }
 
-//    return '<pre>'.print_r($JSON,true).'</pre>';
 
     //Go through data and build rows of the table
     foreach ($JSON['data'] as $key => $routeItem) {
