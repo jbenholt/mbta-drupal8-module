@@ -1,0 +1,24 @@
+mbta.all_routes:
+  path: '/mbta'
+  defaults:
+    _controller: '\Drupal\mbta\Controller\MBTARouteController::getAllMBTARoutes'
+    _title: 'All Routes for the MBTA'
+  requirements:
+      _access: 'TRUE'
+mbta.route:
+  path: '/mbta/{name}'
+  defaults:
+    _controller: '\Drupal\mbta\Controller\MBTARouteController::getMBTARoute'
+    _title: 'A Route'
+  requirements:
+    _access: 'TRUE'
+    name: '[A-Za-z0-9\-]+'
+mbta.schedule:
+  path: '/mbta/{route}/{stop}'
+  defaults:
+    _controller: '\Drupal\mbta\Controller\MBTARouteController::getMBTASchedule'
+    _title: 'A Schedule'
+  requirements:
+    _access: 'TRUE'
+    route: '[A-Za-z0-9\-]+'
+    stop: '[ A-Za-z0-9\-\/]+'

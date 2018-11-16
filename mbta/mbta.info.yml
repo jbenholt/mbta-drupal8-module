@@ -1,0 +1,4 @@
+name: MBTA
+description: A module that connects to the MBTA API to give train route information
+core: 8.x
+type: module

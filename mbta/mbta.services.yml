@@ -1,0 +1,4 @@
+services:
+  mbta.route_downloader:
+    class: Drupal\mbta\MBTARouteDownloader
+    arguments: ['@http_client']

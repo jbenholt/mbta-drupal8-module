@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains mbta.module.
+ */
+
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mbta_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.mbta':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This is a module that displays MBTA route information and schedules.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

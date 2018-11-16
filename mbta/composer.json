@@ -1,0 +1,14 @@
+{
+  "name": "drupal/mbta",
+  "description": "A custom drupal module that displays MBTA train routes and times.",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "Ben Holt",
+      "role": "Maintainer"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+}
+
